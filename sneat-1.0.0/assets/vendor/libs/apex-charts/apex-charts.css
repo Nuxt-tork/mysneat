@@ -689,7 +689,7 @@
 .light-style .apexcharts-canvas .apexcharts-tooltip .apexcharts-tooltip-title {
   background: #fff;
   border-color: #d9dee3;
-  font-family: var(--bs-font-sans-serif) !important;
+  font-family: var(--bs-font-sans-serif-lexend) !important;
   font-weight: 600;
 }
 .light-style .apexcharts-canvas .apexcharts-xaxistooltip,
@@ -738,7 +738,7 @@
   border-top-color: #d9dee3;
 }
 .light-style .apexcharts-canvas .apexcharts-tooltip-text {
-  font-family: var(--bs-font-sans-serif) !important;
+  font-family: var(--bs-font-sans-serif-lexend) !important;
   filter: none;
 }
 .light-style .apexcharts-canvas .apexcharts-marker {

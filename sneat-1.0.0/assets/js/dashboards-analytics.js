@@ -458,7 +458,7 @@
               show: true,
               value: {
                 fontSize: '1.5rem',
-                fontFamily: 'Public Sans',
+                fontFamily: 'Lexend',
                 color: headingColor,
                 offsetY: -15,
                 formatter: function (val) {
@@ -467,11 +467,12 @@
               },
               name: {
                 offsetY: 20,
-                fontFamily: 'Public Sans'
+                fontFamily: 'Lexend'
               },
               total: {
                 show: true,
                 fontSize: '0.8125rem',
+                fontFamily: 'Lexend',
                 color: axisColor,
                 label: 'Weekly',
                 formatter: function (w) {
@@ -482,6 +483,8 @@
           }
         }
       }
+
+
     };
   if (typeof chartOrderStatistics !== undefined && chartOrderStatistics !== null) {
     const statisticsChart = new ApexCharts(chartOrderStatistics, orderChartConfig);
