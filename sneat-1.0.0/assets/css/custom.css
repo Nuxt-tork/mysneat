@@ -73,3 +73,79 @@
   }
 
   /* Blicker end */
+
+  /* notification bar  */
+
+  
+.dropdown-notifications .badge-notifications {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  padding: 0.25em 0.5em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: #dc3545;
+  border-radius: 50%;
+  transform: translate(50%, -50%);
+  transform-origin: 100% 0;
+  z-index: 1;
+}
+
+.dropdown-notifications .dropdown-menu {
+  width: 350px;
+  padding: 0;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-notifications .dropdown-menu-header {
+  padding: 1rem;
+  background-color: #f8f9fa;
+}
+
+.dropdown-notifications .dropdown-notifications-all {
+  font-size: 0.875rem;
+}
+
+.dropdown-notifications .dropdown-notifications-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.dropdown-notifications .list-group-item {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.dropdown-notifications .list-group-item:last-child {
+  border-bottom: 0;
+}
+
+.dropdown-notifications .dropdown-notifications-item.marked-as-read {
+  background-color: #f8f9fa;
+}
+
+.dropdown-notifications .dropdown-notifications-actions {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-notifications .dropdown-notifications-read,
+.dropdown-notifications .dropdown-notifications-archive {
+  color: #6c757d;
+  margin-left: 0.5rem;
+}
+
+.dropdown-notifications .dropdown-notifications-read:hover,
+.dropdown-notifications .dropdown-notifications-archive:hover {
+  color: #212529;
+}
+
+.dropdown-notifications .dropdown-menu-footer {
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #f8f9fa;
+}
