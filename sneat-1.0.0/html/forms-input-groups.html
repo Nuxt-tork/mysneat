@@ -52,6 +52,10 @@
 
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    
+    <!-- Custom Developer CSS -->
+    <link rel="stylesheet" href="../assets/css/custom.css" />
+    
 
     <!-- Page CSS -->
 
@@ -430,10 +434,17 @@
               </ul>
             </li>
             <!-- Tables -->
-            <li class="menu-item">
+            <li class="menu-item active">
               <a href="tables-basic.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-table"></i>
                 <div data-i18n="Tables">Tables</div>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="tables-basic-blink.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-table"></i>
+                <div data-i18n="Tables">Blink Tables</div>
               </a>
             </li>
             <!-- Misc -->
@@ -504,6 +515,57 @@
                     >Star</a
                   >
                 </li>
+
+               <div class="notification-container">
+                    <div class="notification-icon" id="notificationIcon">
+                        <i class="bx bx-bell"></i>
+                        <span class="notification-counter" id="notificationCounter">5</span>
+                    </div>
+                    <div class="notification-notification-dropdown" id="notificationDropdown">
+                        <div class="notification-dropdown-header">
+                            <h3>Notification</h3>
+                            <a href="#" class="mail-icon">
+                                <i class="bx bx-envelope"></i>
+                            </a>
+                        </div>
+                        <div class="notification-dropdown-body" id="notificationList">
+                            <div class="notification-item" data-id="1">
+                                <div class="notification-avatar">
+                                    <img src="https://via.placeholder.com/40" alt="User Avatar">
+                                </div>
+                                <div class="notification-content">
+                                    <p><strong>Congratulations Lettie</strong> 🎉 Won the monthly best seller gold badge</p>
+                                    <span class="time-ago">1h ago</span>
+                                </div>
+                                <button class="remove-notification" data-id="1"><i class="bx bx-x"></i></button>
+                            </div>
+                            <div class="notification-item" data-id="2">
+                                <div class="notification-avatar initial-circle">
+                                    <span>CF</span>
+                                </div>
+                                <div class="notification-content">
+                                    <p><strong>Charles Franklin</strong> Accepted your connection</p>
+                                    <span class="time-ago">12hr ago</span>
+                                </div>
+                                <button class="remove-notification" data-id="2"><i class="bx bx-x"></i></button>
+                            </div>
+                            <div class="notification-item" data-id="3">
+                                <div class="notification-avatar">
+                                    <img src="https://via.placeholder.com/40" alt="User Avatar">
+                                </div>
+                                <div class="notification-content">
+                                    <p><strong>New Message</strong> <i class="bx bx-envelope-open"></i> You have new message from <strong>Natalie</strong></p>
+                                    <span class="time-ago">1h ago</span>
+                                </div>
+                                <button class="remove-notification" data-id="3"><i class="bx bx-x"></i></button>
+                            </div>
+                        </div>
+                        <div class="notification-dropdown-footer">
+                            <a href="#">View all notifications</a>
+                        </div>
+                    </div>
+                </div>
+
 
                 <!-- User -->
                 <li class="nav-item navbar-dropdown dropdown-user dropdown">
@@ -1212,6 +1274,9 @@
 
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../assets/js/custom.js"></script>
 
     <!-- Page JS -->
 
