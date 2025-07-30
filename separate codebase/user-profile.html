@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <style>
+        /* Custom CSS Names */
+        .user-profile-container {
+            display: flex;
+            align-items: center; /* Vertically center items */
+            font-family: Arial, sans-serif; /* Example font */
+            background-color: #fff; /* White background */
+            padding: 10px;
+            border-radius: 8px; /* Slightly rounded corners for the container */
+            max-width: fit-content; /* Adjust width to content */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+        }
+
+        .user-avatar {
+            width: 80px; /* Adjust avatar size as needed */
+            height: 80px;
+            border-radius: 15px; /* More rounded corners for the image, mimicking the image */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            margin-right: 20px; /* Space between image and text */
+        }
+
+        .user-details-wrapper {
+            display: flex;
+            flex-direction: column; /* Stack text elements vertically */
+        }
+
+        .greeting-text {
+            font-size: 2.2em; /* Large font for "Hellow, User" */
+            font-weight: normal; /* Normal weight */
+            color: #333; /* Dark gray color */
+            margin-bottom: 5px; /* Space below the greeting */
+        }
+
+        .navigation-links {
+            font-size: 1.1em; /* Smaller font for links */
+            color: #555; /* Medium gray color for links */
+            display: flex;
+            align-items: center; /* Align icons with text */
+        }
+
+        .dashboard-link,
+        .cart-link {
+            text-decoration: none; /* Remove underline from links */
+            color: #ff0000; /* Red color for links as per image */
+            margin-right: 10px; /* Space between links */
+            display: flex;
+            align-items: center;
+        }
+
+        .link-separator {
+            color: #ccc; /* Light gray for the separator */
+            margin: 0 5px; /* Space around the separator */
+        }
+
+        /* Basic icons - using unicode characters for simplicity, replace with actual icons if needed */
+        .dashboard-icon::before {
+            content: "\25A3"; /* Unicode for a square (dashboard icon) */
+            margin-right: 5px;
+            font-size: 0.9em; /* Adjust icon size */
+        }
+
+        .cart-icon::before {
+            content: "\1F6D2"; /* Unicode for shopping cart (cart icon) */
+            margin-right: 5px;
+            font-size: 0.9em; /* Adjust icon size */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="user-profile-container">
+        <img src="image_dd8042.png" alt="User Avatar" class="user-avatar">
+        <div class="user-details-wrapper">
+            <div class="greeting-text">Hellow, User</div>
+            <div class="navigation-links">
+                <a href="#" class="dashboard-link">
+                    <span class="dashboard-icon"></span>Dashboard
+                </a>
+                <span class="link-separator">|</span>
+                <a href="#" class="cart-link">
+                    <span class="cart-icon"></span>Cart
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
